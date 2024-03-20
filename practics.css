@@ -1,0 +1,9 @@
+.active {
+  background-color: red; /* Цвет при активации */
+}
+
+td {
+  border: 1px solid green;
+  width: 50px;
+  height: 50px;
+}
