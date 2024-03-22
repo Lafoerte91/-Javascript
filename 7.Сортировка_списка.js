@@ -24,3 +24,4 @@ sortButton.addEventListener('click', function() {
     list.appendChild(item)
   })
 })
+
