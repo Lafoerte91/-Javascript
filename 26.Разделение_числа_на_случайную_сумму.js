@@ -6,7 +6,6 @@ const num = 100
 
 let result = []
 let sum
-let max
 
 for(let i = 0; i < 1000; i++)  {
   const random = Math.floor(Math.random() * 100) - 1 // получаем случайное число от 1 по 99
