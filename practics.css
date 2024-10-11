@@ -45,3 +45,37 @@ ul {
 .active {
   background-color: red;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#myButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+textarea {
+  resize: both; /* Позволяет изменять размер как по ширине, так и по высоте */
+  overflow: auto; /* Добавляет прокрутку, если текст превышает размер */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.circle {
+  position: absolute;
+  width: 20px; /* Диаметр круга */
+  height: 20px; /* Диаметр круга */
+  border-radius: 50%;
+  background-color: red; /* Цвет круга */
+  pointer-events: auto; /* Позволяет обрабатывать события клика */
+}
