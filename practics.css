@@ -1,3 +1,4 @@
+/*
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 .active {
-  background-color: red; /* Цвет при активации */
+  background-color: red; 
 }
 
 td {
@@ -61,8 +62,8 @@ body {
 }
 
 textarea {
-  resize: both; /* Позволяет изменять размер как по ширине, так и по высоте */
-  overflow: auto; /* Добавляет прокрутку, если текст превышает размер */
+  resize: both; 
+  overflow: auto; 
 }
 
 body {
@@ -73,9 +74,34 @@ body {
 }
 .circle {
   position: absolute;
-  width: 20px; /* Диаметр круга */
-  height: 20px; /* Диаметр круга */
+  width: 20px; 
+  height: 20px; 
   border-radius: 50%;
-  background-color: red; /* Цвет круга */
-  pointer-events: auto; /* Позволяет обрабатывать события клика */
+  background-color: red; 
+  pointer-events: auto; 
+}
+*/
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  z-index: 10; /* Чтобы меню было над контентом */
+}
+
+.menu-link {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+}
+
+.menu-link.active {
+  background-color: #ddd; /* Выделение активной ссылки */
+}
+
+section {
+  padding: 50px;
+  margin-top: 100px; /* Отступ для меню */
 }
