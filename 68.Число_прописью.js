@@ -8,14 +8,24 @@ let num = 1234567890
 `
 Ваш код, конечно же, должен быть универсальным и работать для любых чисел в пределах миллиардов.
 */
-// Установка библиотеки: npm install number-to-words
+// Установка библиотеки: npm install number-to-words-ru
+const convertNumberToWordsRu = require('number-to-words-ru').convert
 let num = 1234567890
 
-function numToWord(num) {
-  const toWords = require('number-to-words')
-  const formattedNumber = toWords.toWords(num, {lang: 'ru'})
+function convertNumber(num) {
+  num = num.toString()
 
-  return formattedNumber
+  let res  = convertNumberToWordsRu(num, {
+    showNumberParts: {
+        fractional: false, // отключаем дробную часть
+    },
+    showCurrency: {
+        integer: false, // отключаем целую часть
+    },
+})
+
+  return res
 }
 
-console.log(numToWord(num))
+console.log(convertNumber(num))
+
