@@ -1,4 +1,4 @@
-/*
+
 * {
   margin: 0;
   padding: 0;
@@ -80,7 +80,7 @@ body {
   background-color: red; 
   pointer-events: auto; 
 }
-*/
+
 .menu {
   position: fixed;
   top: 0;
@@ -104,4 +104,8 @@ body {
 section {
   padding: 50px;
   margin-top: 100px; /* Отступ для меню */
+}
+
+.highlighted {
+  background-color: yellow;
 }
